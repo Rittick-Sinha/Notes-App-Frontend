@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# Note App (Frontend)
 
-## Project info
+A modern note-taking web application built with React, TypeScript, Vite, Tailwind CSS, and shadcn-ui.
 
-**URL**: https://lovable.dev/projects/0f2b59dd-6a5b-41ed-b733-647a5efec76f
+## Features
+- User authentication (register & login)
+- Create, read, update, and delete (CRUD) notes
+- Responsive, clean UI
+- Toast notifications for actions
+- Secure API integration with backend
 
-## How can I edit this code?
+## Getting Started
 
-There are several ways of editing your application.
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
 
-**Use Lovable**
+### Setup
+1. **Clone the repository:**
+   ```sh
+   git clone <YOUR_GIT_URL>
+   cd <YOUR_PROJECT_NAME>/client
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+3. **Configure environment variables:**
+   - Create a `.env` file in the `client` directory:
+     ```env
+     VITE_API_URL=http://localhost:3001/api
+     ```
+   - Set the value to your backend API URL.
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+   The app will be available at [http://localhost:8080](http://localhost:8080) (or the port shown in your terminal).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0f2b59dd-6a5b-41ed-b733-647a5efec76f) and start prompting.
+## Project Structure
+- `src/components/` – UI components (Dashboard, AuthPage, NoteCard, NoteForm, etc.)
+- `src/lib/api.ts` – API calls to the backend
+- `src/pages/` – Page-level components
+- `src/hooks/` – Custom React hooks
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
 
-**Use your preferred IDE**
+## Deployment
+You can deploy this app to any static hosting provider (Vercel, Netlify, etc.).
+- Build the app:
+  ```sh
+  npm run build
+  # or
+  yarn build
+  ```
+- Deploy the contents of the `dist` folder.
+- Set the `VITE_API_URL` environment variable to your deployed backend API URL.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0f2b59dd-6a5b-41ed-b733-647a5efec76f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+MIT
